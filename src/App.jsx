@@ -14,6 +14,7 @@ const App = () => {
      <HashRouter>
       <Router>
         <Nav/>
+        <Listado/>
           <Routes>
             
             <Route path='/' exact element={<Listado/>}/>
