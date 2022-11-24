@@ -68,7 +68,7 @@ const Nav = () => {
             color="inherit"
             aria-label="open drawer"
             sx={{ mr: 2 }}
-            href="/"
+            href="movie-plus/"
           >
             <CottageIcon />
           </IconButton>
@@ -86,7 +86,7 @@ const Nav = () => {
             edge="end"
             color="inherit"
             aria-label="open drawer"
-            href="/"
+            href="movie-plus/"
           >
             <SearchIconWrapper>
               <SearchIcon />
