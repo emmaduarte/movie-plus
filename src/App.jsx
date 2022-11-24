@@ -11,17 +11,16 @@ const App = () => {
     <>
       
     
-     <HashRouter>
+     
       <Router>
         <Nav/>
           <Routes>
             
-            <Route path='/movie-plus' exact element={<Listado/>}/>
-            <Route path='/Detalles/:title/:id' exact element={<Detalles/>}/>
+            <Route path='https://emmaduarte.github.io/movie-plus/' exact element={<Listado/>}/>
+            <Route path='https://emmaduarte.github.io/movie-plus/Detalles/:title/:id' exact element={<Detalles/>}/>
           </Routes>
         
       </Router>
-      </HashRouter>
 </>
       
   )
