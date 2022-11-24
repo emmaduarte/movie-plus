@@ -38,7 +38,7 @@ export default function Listado()  {
                       <div key={item.id}className="peliculas">
                         <img src={`${image_url + item.poster_path}`} alt="Imagen pelicula" className='image'/>
                         <div className='titulo'>{item.title}</div>
-                        <div><button className="boton1"><a href={`movie-plus/Detalles/${item.title}/${item.id}`}> Informacion</a></button></div>
+                        <div><button className="boton1"><a href={`/movie-plus/Detalles/${item.title}/${item.id}`}> Informacion</a></button></div>
                       </div>))
                   }
                   
