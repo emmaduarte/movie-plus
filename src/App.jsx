@@ -11,7 +11,7 @@ const App = () => {
     <>
       
     
-     
+     <HashRouter>
       <Router>
         <Nav/>
           <Routes>
@@ -21,6 +21,7 @@ const App = () => {
           </Routes>
         
       </Router>
+      </HashRouter>
       
 </>
       
