@@ -1,0 +1,61 @@
+.navegador{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: aquamarine;
+}
+.icono{
+    height: 70px;
+    width: 50%;
+    float: left;
+    display: flex;
+    font-size: 25px;
+    padding: 5px;
+    background-color: aquamarine;
+}
+.icono a{
+    border: none;
+    margin: 5px;
+}
+
+.icono a:hover{
+    background: #1f1f38 !important;
+    color: #fff !important;
+    border-color: transparent;
+}
+
+form{
+    background: transparent;
+}
+
+.barra{
+    height: 70px;
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+    font-size: 20px;
+    background-color: aquamarine;
+}
+.barra input{
+    background-color: aliceblue;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5%;
+    border-style: none;
+}
+
+.barra a{
+    border: none;
+    align-items: center;
+    margin: 5px;
+    background: transparent;
+}
+
+.barra a:hover{
+    background: #1f1f38 !important;
+    color: #fff !important;
+    border-color: transparent;
+}
