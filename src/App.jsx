@@ -11,7 +11,7 @@ const App = () => {
     <>
       
     
-     <HashRouter>
+     <BrowserRouter basename='/movie-plus'>
       <Router>
         <Nav/>
           <Routes>
@@ -21,7 +21,7 @@ const App = () => {
           </Routes>
         
       </Router>
-      </HashRouter>
+      </BrowserRouter>
       
 </>
       
