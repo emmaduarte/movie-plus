@@ -24,38 +24,29 @@
     border-color: transparent;
 }
 
-form{
-    background: transparent;
-}
 
-.barra{
-    height: 70px;
-    width: 50%;
-    float: right;
+.buscar-barra{
     display: flex;
+    margin: auto;
+    padding: 1.5em;
     justify-content: right;
-    padding: 5px;
-    font-size: 20px;
-    background-color: aquamarine;
-}
-.barra input{
-    background-color: aliceblue;
-    font-size: 15px;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5%;
-    border-style: none;
+    width: 25%;
 }
 
-.barra a{
-    border: none;
-    align-items: center;
-    margin: 5px;
+.buscar-barra input{
+    width: 100%;
     background: transparent;
+    border-radius: 1.5em;
+    box-shadow: 0 0 0 0.2em #1f1f38 inset;
+    padding: 0.75em;
+    color: #f1f1f1;
 }
 
-.barra a:hover{
-    background: #1f1f38 !important;
-    color: #fff !important;
-    border-color: transparent;
+
+.buscar-boton{
+    background: transparent;
+    border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
+    padding: 10px;
+    position: relative;
+    color: #fff;
 }

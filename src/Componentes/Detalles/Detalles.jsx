@@ -13,6 +13,7 @@ const Detalles = () => {
     const [peli, setPeli] = useState([])
     const navigate = useNavigate()
     const [trailer, setTrailer] = useState(null)
+    {/*Llamado a la api de los detalles */}
     useEffect(() =>{
       fetch(`${api_url}/movie/${id}?api_key=${api}&language=es-ES`)
       .then((res) =>res.json())
@@ -21,29 +22,19 @@ const Detalles = () => {
         setPeli(data)
       })
     }, [])
-{/* 
-    const trailermovie = async(id)=>{
-      return await fetch(`${api_url}/movie/${id}/videos?api_key=${api}&language=es-ES`)
-      .then((res) =>res.json())
-      .then(data =>{
-        console.log(data)
-        if(data.results){
-          const trailer = data.results.find(
-            (vid) => vid.name === "Official Trailer"
-          );
-          console.log(data)
-          setTrailer(trailer ? trailer : data.videos.results[0])
-        }
-      })
-    }
-*/}
+    {/*Llamado a la api de los videos para el trailer*/}
     useEffect(() =>{
       fetch(`${api_url}/movie/${id}/videos?api_key=${api}&language=es-ES`)
       .then((res) =>res.json())
       .then(data =>{
         console.log(data)
-        console.log(data.results[0].key)
-        setTrailer(data.results[0].key)
+        if(data.results){
+          const trailer1 = data.results.find(
+            (vid) => vid.type === "Trailer"
+          );
+        console.log(trailer1)
+        setTrailer(trailer1 ? trailer1.key : data.results[0].key)
+          }
       })
     }, [])
  

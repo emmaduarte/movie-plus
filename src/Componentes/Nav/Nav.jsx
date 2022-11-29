@@ -80,23 +80,13 @@ const Nav = () => {
           >
             Movie Plus
           </Typography>
-          <Search>
-          <IconButton
-            size="large"
-            edge="end"
-            color="inherit"
-            aria-label="open drawer"
-            href="/movie-plus"
-          >
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            </IconButton>
-            <StyledInputBase
-              placeholder="Buscar"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
+          
+            <form action="" className='buscar-barra'>
+              <input type="search" name='search' required autoComplete='off' />
+              <button className='buscar-boton' type='submit'><SearchIcon /></button>
+            </form>
+            
+          
         </Toolbar>
       </AppBar>
     </Box>
